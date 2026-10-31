@@ -50,31 +50,47 @@ def main():
         assert page.locator('#category-cards button').count()==len(data['categories'])-1
         assert page.locator('#sidebar-nav .navcount').first.inner_text()==str(len(data['recipes']))
         print('PASS project subpath, initial count and categories')
-        # Cake subcategories belong only to the sidebar, not the main page.
+        # Cake filters appear below search only after choosing cakes and cookies.
         assert page.locator('#cake-hub').count()==0
-        assert page.locator('#cake-subtypes').count()==0
-        assert page.locator('#sidebar-nav [data-cake-subcat]').count()==2
-        for sub in ['עוגות חלביות','עוגיות']:
-            link=page.locator(f'#sidebar-nav [data-cake-subcat="{sub}"]')
-            link.click()
-            expected=sum(r.get('subcat')==sub for r in data['recipes'])
-            assert page.locator('#display-progress').inner_text()==f'מוצגים {min(48,expected)} מתוך {expected} מתכונים'
-            assert link.get_attribute('aria-pressed')=='true'
-            if sub=='עוגות חלביות':
-                assert page.locator('.coverbtn[data-open="629"]').count()==1
-                assert page.locator('.coverbtn[data-open="630"]').count()==1
+        assert page.locator('#sidebar-nav [data-cake-subcat]').count()==0
+        assert page.locator('#cake-subtypes').count()==1
+        assert not page.locator('#cake-subtypes').is_visible()
+        for width,height in [(1440,1000),(390,844)]:
+            page.set_viewport_size({'width':width,'height':height})
+            if width == 1440:
+                page.locator('#sidebar-nav [data-cat="עוגות ועוגיות"]').click()
             else:
-                assert page.locator('.coverbtn[data-open="629"]').count()==0
-        page.locator('#sidebar-nav [data-cat="עוגות ועוגיות"]').click()
-        expected=sum(r['cat']=='עוגות ועוגיות' for r in data['recipes'])
-        assert page.locator('#display-progress').inner_text()==f'מוצגים 48 מתוך {expected} מתכונים'
-        page.locator('#clear').click()
-        assert page.locator('#recipes article').count()==48
-        page.set_viewport_size({'width':390,'height':844})
-        assert page.locator('#cake-hub').count()==0
-        assert page.locator('#cake-subtypes').count()==0
+                page.locator('#category-cards [data-cat="עוגות ועוגיות"]').click()
+            assert page.locator('#cake-subtypes').is_visible()
+            assert page.locator('#cake-subtypes [data-cake-filter]').count()==3
+            assert page.locator('#cake-subtypes').evaluate('(e)=>e.previousElementSibling.id')=='fish-subtypes'
+            for sub in ['עוגות חלביות','עוגיות']:
+                chip=page.locator(f'#cake-subtypes [data-cake-filter="{sub}"]')
+                chip.click()
+                expected=sum(r.get('subcat')==sub for r in data['recipes'])
+                assert page.locator('#display-progress').inner_text()==f'מוצגים {min(48,expected)} מתוך {expected} מתכונים'
+                assert chip.get_attribute('aria-pressed')=='true'
+                assert page.locator('#results-title').inner_text()==sub
+                if sub=='עוגות חלביות':
+                    assert page.locator('.coverbtn[data-open="629"]').count()==1
+                    assert page.locator('.coverbtn[data-open="630"]').count()==1
+                else:
+                    assert page.locator('.coverbtn[data-open="629"]').count()==0
+            page.locator('#cake-subtypes [data-cake-filter="הכל"]').click()
+            expected=sum(r['cat']=='עוגות ועוגיות' for r in data['recipes'])
+            assert page.locator('#display-progress').inner_text()==f'מוצגים 48 מתוך {expected} מתכונים'
+            page.locator('#clear').click()
+            assert not page.locator('#cake-subtypes').is_visible()
+            assert page.locator('#recipes article').count()==48
         page.set_viewport_size({'width':1440,'height':1000})
-        print('PASS cake subcategories only in sidebar; no redundant middle sections')
+        page.locator('#sidebar-nav [data-cat="עוגות ועוגיות"]').click()
+        assert page.locator('#cake-subtypes').is_visible()
+        page.locator('#sidebar-nav [data-cat="דגים"]').click()
+        assert not page.locator('#cake-subtypes').is_visible()
+        assert page.locator('#fish-subtypes').is_visible()
+        page.locator('#clear').click()
+        print('PASS cake subcategories shown only after parent beneath search')
+
 
         if args.screenshots:
             from PIL import Image,ImageChops

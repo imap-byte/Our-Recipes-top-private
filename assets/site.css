@@ -71,10 +71,5 @@
 #site[hidden], #load-status[hidden]{display:none}
 #load-status{font-family:Arial,sans-serif;text-align:center;padding:3rem}
 
-/* Cake collection: nested categories, preserving the main cake collection. */
-.cake-child-links{margin:-2px 17px 8px 0;padding:4px 11px 4px 3px;border-right:2px solid var(--orange2);display:grid;gap:3px}
-.cake-child{display:flex;align-items:center;justify-content:space-between;gap:7px;text-align:right;border:0;background:transparent;color:var(--warm);border-radius:10px;padding:8px 9px;font-size:12px}
-.cake-child:hover{background:#f1e6d8}
-.cake-child.active{background:#fce8d2;color:#80491d;font-weight:800}
-.cake-child span{font-size:10px;color:var(--tan)}
+/* Cake subcategories use the fish filter styles below the search toolbar. */
 

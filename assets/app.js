@@ -29,10 +29,9 @@ function catCount(c){return c==='הכל'?recipes.length:recipes.filter(r=>r.cat=
 function setup(){
  $('hero-count').textContent=metadata.total; $('hero-categories').textContent=categories.length-1;
  $('hero-photo').src=photos['focaccia'];
- $('sidebar-nav').innerHTML=categories.map((c,i)=>`<button type="button" class="navitem ${i===0?'active':''}" data-cat="${html(c)}"><span class="navicon">${ICONS[i]}</span><span>${html(i===0?'כל המתכונים':c)}</span><span class="navcount">${catCount(c)}</span></button>${c===CAKE_PARENT?`<div class="cake-child-links" aria-label="תתי קטגוריות של עוגות ועוגיות">${CAKE_SUBCATS.filter(k=>k!=='הכל').map(k=>`<button type="button" class="cake-child" data-cake-subcat="${html(k)}" aria-pressed="false">${html(k)} <span>${cakeCount(k)}</span></button>`).join('')}</div>`:''}`).join('');
+ $('sidebar-nav').innerHTML=categories.map((c,i)=>`<button type="button" class="navitem ${i===0?'active':''}" data-cat="${html(c)}"><span class="navicon">${ICONS[i]}</span><span>${html(i===0?'כל המתכונים':c)}</span><span class="navcount">${catCount(c)}</span></button>`).join('');
  $('category-cards').innerHTML=categories.slice(1).map(c=>`<button type="button" class="catbox" data-cat="${html(c)}"><img class="catphoto" src="${photos[CATPIC[c]]}" alt="תמונת המחשה לקטגוריית ${html(c)}"/><div class="cattext"><strong>${html(c)}</strong><small>${catCount(c)} מתכונים</small></div></button>`).join('');
  document.querySelectorAll('[data-cat]').forEach(el=>el.addEventListener('click',()=>{chosen=el.dataset.cat;fishKind='הכל';cakeSubcat='הכל';favoritesOnly=false;limit=PAGE_SIZE;render();$('search-scroll-anchor').scrollIntoView({behavior:'smooth',block:'start'})}));
- document.querySelectorAll('[data-cake-subcat]').forEach(el=>el.addEventListener('click',()=>{chosen=CAKE_PARENT;cakeSubcat=el.dataset.cakeSubcat;fishKind='הכל';favoritesOnly=false;limit=PAGE_SIZE;render();$('search-scroll-anchor').scrollIntoView({behavior:'smooth',block:'start'})}));
  $('search').addEventListener('input',e=>{query=e.target.value;limit=PAGE_SIZE;render()});
  $('sort').addEventListener('change',e=>{sort=e.target.value;render()});
  $('year').addEventListener('change',e=>{year=e.target.value;limit=PAGE_SIZE;render()});
@@ -73,6 +72,11 @@ function getResults(){const items=recipes.filter(matches);
  return items;}
 function render(){
  $('fish-subtypes').classList.toggle('hidden',chosen!=='דגים'||favoritesOnly);
+ $('cake-subtypes').classList.toggle('hidden',chosen!==CAKE_PARENT||favoritesOnly);
+ if(chosen===CAKE_PARENT&&!favoritesOnly){
+   $('cake-subtypes').innerHTML='<b>🍰 סוג העוגה:</b> '+CAKE_SUBCATS.map(k=>`<button type="button" class="fish-chip cake-chip ${cakeSubcat===k?'active':''}" data-cake-filter="${html(k)}" aria-pressed="${cakeSubcat===k}">${html(k==='הכל'?'כל העוגות והעוגיות':k)} <span>${cakeCount(k)}</span></button>`).join('');
+   $('cake-subtypes').querySelectorAll('[data-cake-filter]').forEach(el=>el.addEventListener('click',()=>{cakeSubcat=el.dataset.cakeFilter;limit=PAGE_SIZE;render()}));
+ }
  if(chosen==='דגים'&&!favoritesOnly){
    const subtypeCount=k=>recipes.filter(r=>r.cat==='דגים'&&(k==='הכל'||norm(r.title).includes(norm(k)))).length;
    $('fish-subtypes').innerHTML='<b>🐟 סוג הדג:</b> '+FISH_KINDS.map(k=>`<button type="button" class="fish-chip ${fishKind===k?'active':''}" data-fish="${html(k)}">${html(k==='הכל'?'כל הדגים':k)} <span>${subtypeCount(k)}</span></button>`).join('');
@@ -84,7 +88,6 @@ function render(){
  $('clear').classList.toggle('hidden',!(chosen!=='הכל'||fishKind!=='הכל'||cakeSubcat!=='הכל'||favoritesOnly||query||year!=='all'||sort!=='popular'));
  $('fav-top').textContent=favoritesOnly?'♥ הצגת כל המתכונים':'♡ המועדפים שלי';
  document.querySelectorAll('[data-cat]').forEach(el=>{el.classList.toggle(el.classList.contains('navitem')?'active':'chosen',el.dataset.cat===chosen&&!favoritesOnly)});
- document.querySelectorAll('[data-cake-subcat]').forEach(el=>{const active=chosen===CAKE_PARENT&&cakeSubcat===el.dataset.cakeSubcat&&!favoritesOnly;el.classList.toggle('active',active);el.setAttribute('aria-pressed',String(active))});
  $('recipes').innerHTML=display.map(r=>`<article class="recipe"><button class="coverbtn" data-open="${r.id}" aria-label="פתיחת ${html(r.title)}"><img src="${photos[r.photo]}" alt="תמונת המחשה בלבד: ${html(r.title)}"/><span class="ribbon">${html(r.subcat||r.cat)}</span></button><button class="heart ${favorites.has(r.id)?'on':''}" data-fav="${r.id}" aria-label="${favorites.has(r.id)?'הסרה מהמועדפים':'הוספה למועדפים'}" title="מועדפים">${favorites.has(r.id)?'♥':'♡'}</button><div class="rcnt"><button data-open="${r.id}" class="rtitle">${html(r.title)}</button><span class="creditbadge ${r.creditKind==='כותבת לא זוהתה'?'unknown':''}">${r.creditKind==='שולחת'?'✉':'✍'} ${html(r.creditLabel)}</span><p class="rsub">${html(r.ingredients.length?r.ingredients.slice(0,3).join(' · '):'דף מקור סרוק — המרכיבים וההכנה מופיעים בצילום המקורי')}</p><div class="rmeta"><span>◷ ${r.year}</span><span>${r.scan?'▣ כולל צילום מקור':''}</span><strong>${r.ingredients.length?'מתכון כתוב':'דף סרוק'}</strong></div></div></article>`).join('');
  $('recipes').querySelectorAll('[data-open]').forEach(el=>el.addEventListener('click',()=>openRecipe(+el.dataset.open)));
  $('recipes').querySelectorAll('[data-fav]').forEach(el=>el.addEventListener('click',()=>setFav(+el.dataset.fav)));
