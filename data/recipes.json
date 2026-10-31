@@ -20457,12 +20457,12 @@
       "scan": null,
       "continuation": false,
       "new": true,
-      "author": "אביה של שרה לוי; הכמויות נוסחו בידי שרה לוי",
-      "creditKind": "קרדיט כפי שנמסר בתור האישורים",
-      "creditLabel": "מאת: אביה של שרה לוי; הכמויות נוסחו בידי שרה לוי",
-      "sourceSharer": "",
-      "sourceSharerKind": "",
-      "creditEvidence": "ייחוס לפי מקור פרטי שנבדק ואושר בתור האישורים.",
+      "author": "ג׳אווה (java) מפרוג",
+      "creditKind": "כותבת מקור",
+      "creditLabel": "מאת: ג׳אווה (java) מפרוג",
+      "sourceSharer": "שרה לוי",
+      "sourceSharerKind": "העבירה את המתכון בג׳ימייל",
+      "creditEvidence": "המתכון נכתב בידי java בפרוג, באשכול המטוגן הפשוט והטעים ביותר (2019). שרה לוי הבהירה ב-17.12.2025 שהעתיקה את המתכון מפרוג ולא כתבה אותו.",
       "generatedImage": true,
       "generatedImageNote": "AI-generated illustrative recipe photo matching the approved recipe; not the source dish.",
       "imageAlt": "ספינג׳ מרוקאי אוורירי בציפוי סוכר טחון"
@@ -21078,4 +21078,4 @@
     "189": 101,
     "190": 85
   }
-}
+}\n
