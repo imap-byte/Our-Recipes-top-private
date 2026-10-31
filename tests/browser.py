@@ -50,6 +50,31 @@ def main():
         assert page.locator('#category-cards button').count()==len(data['categories'])-1
         assert page.locator('#sidebar-nav .navcount').first.inner_text()==str(len(data['recipes']))
         print('PASS project subpath, initial count and categories')
+        # Homepage exposes cake subcategories directly, even when the sidebar is hidden on mobile.
+        for width,height in [(1440,1000),(390,844)]:
+            page.set_viewport_size({'width':width,'height':height})
+            assert page.locator('#cake-hub').is_visible()
+            quick=page.locator('#cake-hub [data-cake-quick]')
+            assert quick.count()==3
+            for sub in ['עוגות חלביות','עוגיות']:
+                assert page.locator(f'#cake-hub [data-cake-quick="{sub}"]').is_visible()
+                page.locator(f'#cake-hub [data-cake-quick="{sub}"]').click()
+                expected=sum(r.get('subcat')==sub for r in data['recipes'])
+                assert page.locator('#display-progress').inner_text()==f'מוצגים {min(48,expected)} מתוך {expected} מתכונים'
+                assert page.locator(f'#cake-hub [data-cake-quick="{sub}"]').get_attribute('aria-pressed')=='true'
+                if sub=='עוגות חלביות':
+                    assert page.locator('.coverbtn[data-open="629"]').count()==1
+                    assert page.locator('.coverbtn[data-open="630"]').count()==1
+                else:
+                    assert page.locator('.coverbtn[data-open="629"]').count()==0
+            page.locator('#cake-hub [data-cake-quick="הכל"]').click()
+            expected=sum(r['cat']=='עוגות ועוגיות' for r in data['recipes'])
+            assert page.locator('#display-progress').inner_text()==f'מוצגים 48 מתוך {expected} מתכונים'
+            page.locator('#clear').click()
+            assert page.locator('#recipes article').count()==48
+        page.set_viewport_size({'width':1440,'height':1000})
+        print('PASS visible and functional cake subcategories on desktop and mobile')
+
         if args.screenshots:
             from PIL import Image,ImageChops
             args.screenshots.mkdir(parents=True,exist_ok=True)
