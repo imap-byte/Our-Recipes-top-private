@@ -77,26 +77,4 @@
 .cake-child:hover{background:#f1e6d8}
 .cake-child.active{background:#fce8d2;color:#80491d;font-weight:800}
 .cake-child span{font-size:10px;color:var(--tan)}
-.cake-subtypes{display:flex;flex-wrap:wrap;align-items:center;gap:9px;background:#fff7eb;border:1px solid #ead6bc;border-radius:17px;padding:13px 15px;margin:12px 0 18px}
-.cake-subtypes b{color:var(--warm);font-size:13px;margin-left:5px}
-.cake-chip{border:1px solid #dfcfba;background:#fff;border-radius:19px;color:var(--warm);font-size:12px;font-weight:700;padding:8px 13px}
-.cake-chip:hover{border-color:var(--orange2)}
-.cake-chip.active{background:var(--orange);color:#fff;border-color:var(--orange)}
-.cake-chip span{opacity:.75;font-size:10px;margin-right:4px}
-@media(max-width:490px){.cake-subtypes{gap:6px;padding:10px}.cake-chip{font-size:11px;padding:7px 10px}}
 
-/* Expose the cake category hierarchy on the homepage on every screen size. */
-.cake-hub{margin:1px 0 25px;padding:18px 21px 21px;border:1px solid #e8d7c2;border-radius:20px;background:linear-gradient(130deg,#fffdfa 20%,#fff1df 100%);box-shadow:0 6px 21px #5d4f4510}
-.cake-hub-heading{margin-bottom:14px;text-align:right}
-.cake-hub-kicker{display:block;font-size:11px;font-weight:800;color:var(--orange);margin-bottom:6px}
-.cake-hub h2{font-size:21px;line-height:1.35;margin:0;color:var(--warm)}
-.cake-hub p{font-size:12px;color:#887567;margin:5px 0 0}
-.cake-hub-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px}
-.cake-hub-btn{min-width:0;display:flex;align-items:center;gap:11px;padding:13px 15px;border:1px solid #e8dacc;border-radius:14px;background:#fff;color:var(--warm);text-align:right;font-weight:700;font-size:13px;transition:background .2s,border-color .2s,box-shadow .2s}
-.cake-hub-btn:hover{background:#fff9ef;border-color:var(--orange2);box-shadow:0 3px 12px #5d4f451c}
-.cake-hub-btn.active{background:#fff2df;border-color:var(--orange);box-shadow:inset 0 0 0 1px var(--orange)}
-.cake-hub-emoji{font-size:23px;flex:none}
-.cake-hub-label{min-width:0;flex:1;line-height:1.45}
-.cake-hub-count{font-size:10px;color:var(--sage);white-space:nowrap}
-@media(max-width:1100px){.cake-hub-actions{grid-template-columns:1fr}}
-@media(max-width:780px){.cake-hub{padding:15px 14px;margin:3px 0 19px}.cake-hub h2{font-size:19px}.cake-hub-actions{gap:8px}.cake-hub-btn{min-height:51px;padding:9px 12px}}
