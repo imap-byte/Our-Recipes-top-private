@@ -1,0 +1,45 @@
+name: Apply reviewed sfinge credit correction
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/apply-credit-616.yml
+permissions:
+  contents: write
+jobs:
+  correct:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Correct one provenance record
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('data/recipes.json')
+          d = json.loads(p.read_text(encoding='utf-8'))
+          assert len(d['recipes']) == 610
+          a = [r for r in d['recipes'] if r['id'] == 616]
+          assert len(a) == 1 and a[0]['title'].startswith('ספינג')
+          r = a[0]
+          r['author'] = 'ג׳אווה (java) מפרוג'
+          r['creditKind'] = 'כותבת מקור'
+          r['creditLabel'] = 'מאת: ג׳אווה (java) מפרוג'
+          r['sourceSharer'] = 'שרה לוי'
+          r['sourceSharerKind'] = 'העבירה את המתכון בג׳ימייל'
+          r['creditEvidence'] = 'המתכון נכתב בידי java בפרוג, באשכול המטוגן הפשוט והטעים ביותר (2019). שרה לוי הבהירה ב-17.12.2025 שהעתיקה את המתכון מפרוג ולא כתבה אותו.'
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2) + '\\n',encoding='utf-8')
+          PY
+      - name: Save correction to main
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/recipes.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Correct sfinge recipe author to java on Prog"
+            git push origin HEAD:main
+          fi
