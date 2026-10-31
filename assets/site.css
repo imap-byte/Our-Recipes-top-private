@@ -70,3 +70,17 @@
 
 #site[hidden], #load-status[hidden]{display:none}
 #load-status{font-family:Arial,sans-serif;text-align:center;padding:3rem}
+
+/* Cake collection: nested categories, preserving the main cake collection. */
+.cake-child-links{margin:-2px 17px 8px 0;padding:4px 11px 4px 3px;border-right:2px solid var(--orange2);display:grid;gap:3px}
+.cake-child{display:flex;align-items:center;justify-content:space-between;gap:7px;text-align:right;border:0;background:transparent;color:var(--warm);border-radius:10px;padding:8px 9px;font-size:12px}
+.cake-child:hover{background:#f1e6d8}
+.cake-child.active{background:#fce8d2;color:#80491d;font-weight:800}
+.cake-child span{font-size:10px;color:var(--tan)}
+.cake-subtypes{display:flex;flex-wrap:wrap;align-items:center;gap:9px;background:#fff7eb;border:1px solid #ead6bc;border-radius:17px;padding:13px 15px;margin:12px 0 18px}
+.cake-subtypes b{color:var(--warm);font-size:13px;margin-left:5px}
+.cake-chip{border:1px solid #dfcfba;background:#fff;border-radius:19px;color:var(--warm);font-size:12px;font-weight:700;padding:8px 13px}
+.cake-chip:hover{border-color:var(--orange2)}
+.cake-chip.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.cake-chip span{opacity:.75;font-size:10px;margin-right:4px}
+@media(max-width:490px){.cake-subtypes{gap:6px;padding:10px}.cake-chip{font-size:11px;padding:7px 10px}}

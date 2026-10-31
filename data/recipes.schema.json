@@ -162,6 +162,13 @@
               },
               "additionalProperties": false
             }
+          },
+          "subcat": {
+            "type": "string",
+            "enum": [
+              "עוגות חלביות",
+              "עוגיות"
+            ]
           }
         },
         "additionalProperties": false

@@ -28,6 +28,7 @@ export function validateData(data, media) {
         !requiredStrings.every(key => typeof r[key] === 'string') || !r.title ||
         !Number.isSafeInteger(r.year) || !strings(r.ingredients) || !strings(r.steps) ||
         typeof r.new !== 'boolean' || typeof r.continuation !== 'boolean' ||
+        (r.subcat!==undefined && (r.cat!=='עוגות ועוגיות' || !['עוגות חלביות','עוגיות'].includes(r.subcat))) ||
         !data.categories.slice(1).includes(r.cat) || !Object.hasOwn(maps.photos,r.photo) ||
         (r.scan !== null && (typeof r.scan !== 'string' || !Object.hasOwn(maps.scans,r.scan))) ||
         (r.scanExtra !== undefined && (!strings(r.scanExtra) || !r.scanExtra.every(key => Object.hasOwn(maps.scans,key)))) ||
