@@ -31,7 +31,7 @@ jobs:
           r['sourceSharer'] = 'שרה לוי'
           r['sourceSharerKind'] = 'העבירה את המתכון בג׳ימייל'
           r['creditEvidence'] = 'המתכון נכתב בידי java בפרוג, באשכול המטוגן הפשוט והטעים ביותר (2019). שרה לוי הבהירה ב-17.12.2025 שהעתיקה את המתכון מפרוג ולא כתבה אותו.'
-          p.write_text(json.dumps(d,ensure_ascii=False,indent=2) + '\\n',encoding='utf-8')
+          p.write_text(json.dumps(d,ensure_ascii=False,indent=2) + chr(10),encoding='utf-8')
           PY
       - name: Save correction to main
         shell: bash
