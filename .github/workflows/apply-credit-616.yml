@@ -20,7 +20,10 @@ jobs:
           import json
           from pathlib import Path
           p = Path('data/recipes.json')
-          d = json.loads(p.read_text(encoding='utf-8'))
+          raw = p.read_text(encoding='utf-8')
+          if raw.endswith('\\n'):
+            raw = raw[:-2]
+          d = json.loads(raw)
           assert len(d['recipes']) == 610
           a = [r for r in d['recipes'] if r['id'] == 616]
           assert len(a) == 1 and a[0]['title'].startswith('ספינג')
