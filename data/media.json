@@ -3635,6 +3635,11 @@
       "path": "media/photos/recipe-630-nut-cheesecake--dd64ce082756c98d.webp",
       "sha256": "dd64ce082756c98d8a55d0aae32facf89c6253f1237398b3d86100eead94c87c",
       "bytes": 108184
+    },
+    "recipe-631-white-spelt-challah": {
+      "path": "media/photos/recipe-631-white-spelt-challah--f360f9df49b44e3a.webp",
+      "sha256": "f360f9df49b44e3ae447c859a38235b1e84a02f3d903593ec226a3d08d267e60",
+      "bytes": 142126
     }
   },
   "scans": {}
