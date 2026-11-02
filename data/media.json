@@ -3640,6 +3640,11 @@
       "path": "media/photos/recipe-631-white-spelt-challah--f360f9df49b44e3a.webp",
       "sha256": "f360f9df49b44e3ae447c859a38235b1e84a02f3d903593ec226a3d08d267e60",
       "bytes": 142126
+    },
+    "recipe-632-three-layer-tahini-coconut-cake": {
+      "path": "media/photos/recipe-632-three-layer-tahini-coconut-cake--b56a29a7414fae00.webp",
+      "sha256": "b56a29a7414fae00b114acb4618764f6e7683c35ac7200eeb0a85ba09be28369",
+      "bytes": 195534
     }
   },
   "scans": {}
