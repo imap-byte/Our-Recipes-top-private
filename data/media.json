@@ -3645,6 +3645,16 @@
       "path": "media/photos/recipe-632-three-layer-tahini-coconut-cake--b56a29a7414fae00.webp",
       "sha256": "b56a29a7414fae00b114acb4618764f6e7683c35ac7200eeb0a85ba09be28369",
       "bytes": 195534
+    },
+    "recipe-633-potato-stuffed-chicken": {
+      "path": "media/photos/recipe-633-potato-stuffed-chicken--d67dd3d0f0b85611.webp",
+      "sha256": "d67dd3d0f0b8561169568ce65a98240a5a3db5d7d18eee936dab3fcc04759c36",
+      "bytes": 154728
+    },
+    "recipe-634-homemade-chicken-nuggets": {
+      "path": "media/photos/recipe-634-homemade-chicken-nuggets--be8a4fffafae658f.webp",
+      "sha256": "be8a4fffafae658f3eba0ffca83cbc11245d4196b6ff690359659a7999beed03",
+      "bytes": 140036
     }
   },
   "scans": {}
