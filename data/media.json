@@ -3655,6 +3655,11 @@
       "path": "media/photos/recipe-634-homemade-chicken-nuggets--be8a4fffafae658f.webp",
       "sha256": "be8a4fffafae658f3eba0ffca83cbc11245d4196b6ff690359659a7999beed03",
       "bytes": 140036
+    },
+    "recipe-635-chicken-corn-balls": {
+      "path": "media/photos/recipe-635-chicken-corn-balls--b0dddbfd889286b3.webp",
+      "sha256": "b0dddbfd889286b320688b65df70350d2c176134ecd51eb4be62da5aba0e69a8",
+      "bytes": 167270
     }
   },
   "scans": {}
