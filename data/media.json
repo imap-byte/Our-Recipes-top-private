@@ -3660,6 +3660,36 @@
       "path": "media/photos/recipe-635-chicken-corn-balls--b0dddbfd889286b3.webp",
       "sha256": "b0dddbfd889286b320688b65df70350d2c176134ecd51eb4be62da5aba0e69a8",
       "bytes": 167270
+    },
+    "recipe-636-seasoned-frozen-fries": {
+      "path": "media/photos/recipe-636-seasoned-frozen-fries--169d48ec2b13eadc.webp",
+      "sha256": "169d48ec2b13eadc5dd9827770eb2349bb252a5961014e51f4b684f78dcce415",
+      "bytes": 157916
+    },
+    "recipe-637-one-pot-rose-pasta": {
+      "path": "media/photos/recipe-637-one-pot-rose-pasta--cd5f8862d46f98b0.webp",
+      "sha256": "cd5f8862d46f98b00748ca084c3f2bca4fc39d254284955a6094d3c2cffc0786",
+      "bytes": 146764
+    },
+    "recipe-638-jalapeno-mayo": {
+      "path": "media/photos/recipe-638-jalapeno-mayo--333981db7dbc44d7.webp",
+      "sha256": "333981db7dbc44d71f8fa973851bbe87008be75985a63ed2559aed1445710a28",
+      "bytes": 77942
+    },
+    "recipe-639-jalapeno-honey-parsley": {
+      "path": "media/photos/recipe-639-jalapeno-honey-parsley--a1e5b4f83fe89e9f.webp",
+      "sha256": "a1e5b4f83fe89e9f9dae15f6b015a1c3c2ef33f2935e26adcc9dfe71cd8ca4c4",
+      "bytes": 77654
+    },
+    "recipe-640-smoked-tuna-herbs": {
+      "path": "media/photos/recipe-640-smoked-tuna-herbs--ecd48d1e15533af9.webp",
+      "sha256": "ecd48d1e15533af93c447fd03912b800f9fc8fc66f5413bc7a1b196ea4deb7ac",
+      "bytes": 214994
+    },
+    "recipe-641-smoked-tuna-sweet-mustard": {
+      "path": "media/photos/recipe-641-smoked-tuna-sweet-mustard--d87c2cb74b74ef22.webp",
+      "sha256": "d87c2cb74b74ef22f9d55ac7f99a06b00f52838f42ddcb7d2f365940ceba4f61",
+      "bytes": 166296
     }
   },
   "scans": {}
