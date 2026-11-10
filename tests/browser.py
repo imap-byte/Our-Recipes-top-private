@@ -57,7 +57,7 @@ def main():
         page.wait_for_function("getComputedStyle(document.querySelector('#top-search')).visibility === 'visible'")
         page.locator('#top-search-input').fill('פסטה')
         assert page.locator('#search').input_value()=='פסטה'
-        page.locator('#top-search-submit').click()
+        page.locator('.top-search-submit').click()
         page.wait_for_function("getComputedStyle(document.querySelector('#top-search')).visibility === 'hidden'")
         assert page.locator('#search').input_value()=='פסטה'
         assert page.locator('#top-search').get_attribute('aria-hidden')=='true'
