@@ -1,0 +1,308 @@
+{
+  "recipes": [
+    {
+      "id": 642,
+      "cat": "סלטים וממרחים",
+      "title": "שומר צלוי בפפריקה ושומשום",
+      "mid": "recipe-642",
+      "year": 2026,
+      "ingredients": [
+        "צלחת מרק גדושה שומר פרוס, כ־350 גרם",
+        "2 כפות שמן",
+        "1 כפית גדושה פפריקה מתוקה",
+        "½ כפית תבלין על האש",
+        "⅓ כפית מלח",
+        "¼ כפית פלפל שחור",
+        "1 כף שומשום"
+      ],
+      "steps": [
+        "מחממים תנור ל־220 מעלות. מערבבים תבלינים ושמן עם השומר. משטחים בשכבה אחת, צולים 15 דקות ומערבבים. מפזרים שומשום וצולים עוד 5–10 דקות עד הזהבה."
+      ],
+      "note": "תבלין ״על האש״ מופיע במקור כתערובת תיבול; המותג וההרכב לא פורטו.",
+      "photo": "recipe-642-roasted-fennel",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "New Born",
+      "creditKind": "שולחת ההודעה",
+      "creditLabel": "שולחת: New Born",
+      "sourceSharer": "New Born",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "New Born — שיתפה את קובץ המתכונים",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "שומר צלוי בפפריקה ושומשום"
+    },
+    {
+      "id": 643,
+      "cat": "סלטים וממרחים",
+      "title": "סלט גזר ופלפל חריף",
+      "mid": "recipe-643",
+      "year": 2026,
+      "ingredients": [
+        "3 גזרים בינוניים",
+        "½–1 פלפל חריף",
+        "2 שיני שום",
+        "3 כפות חומץ",
+        "⅛ כפית מלח לימון",
+        "⅓ כפית מלח"
+      ],
+      "steps": [
+        "פורסים דק את הגזר, הפלפל והשום. מערבבים עם החומץ, מלח הלימון והמלח. מקררים שעה לפחות ומערבבים שוב אחרי חצי שעה."
+      ],
+      "note": "יש לקרר לפחות שעה ולערבב שוב כעבור כחצי שעה.",
+      "photo": "recipe-643-carrot-hot-pepper-salad",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "אמהות מבשלות",
+      "creditKind": "מקור המתכון",
+      "creditLabel": "מקור: אמהות מבשלות",
+      "sourceSharer": "New Born",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "מבוסס על מתכון 188142 באתר אמהות מבשלות; New Born שיתפה את הקובץ",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "סלט גזר ופלפל חריף"
+    },
+    {
+      "id": 644,
+      "cat": "סלטים וממרחים",
+      "title": "החמוצים של נחמי",
+      "mid": "recipe-644",
+      "year": 2026,
+      "ingredients": [
+        "3 גמבות",
+        "2 גזרים",
+        "½ פקעת שומר",
+        "1 בצל קטן",
+        "2 שיני שום",
+        "קולורבי אופציונלי",
+        "6 כפות חומץ",
+        "4 כפות שמן",
+        "2 כפיות סוכר",
+        "1 כפית מלח",
+        "¼ כפית פלפל שחור"
+      ],
+      "steps": [
+        "חותכים ירקות. מערבבים את חומרי התיבול, יוצקים ומערבבים. מקררים שעה–שעתיים ומערבבים שוב באמצע."
+      ],
+      "note": "אפשר להוסיף קולורבי לפי בחירה.",
+      "photo": "recipe-644-nahmi-pickles",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "נחמי",
+      "creditKind": "שם בכותרת המקור",
+      "creditLabel": "מאת: נחמי",
+      "sourceSharer": "New Born",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "נחמי — שם המקור בכותרת; New Born שיתפה את הקובץ",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "החמוצים של נחמי"
+    },
+    {
+      "id": 645,
+      "cat": "סלטים וממרחים",
+      "title": "פלפל חריף בתנור עם הרבה שום",
+      "mid": "recipe-645",
+      "year": 2026,
+      "ingredients": [
+        "פלפלים חריפים ירוקים פרוסים — תבנית בשכבה אחת",
+        "לכל ½ כוס פרוסות צלויות: כ־5 שיני שום, 1½ כפות שמן, ⅛ כפית מלח"
+      ],
+      "steps": [
+        "צולים בשכבה אחת ב־220 מעלות 10–15 דקות. מערבבים מיד עם שום, שמן ומלח לפי היחס. מעבירים לצנצנת ושומרים במקרר."
+      ],
+      "note": "כמות הפלפלים נקבעת לפי תבנית בשכבה אחת. יחס התיבול ניתן לכל חצי כוס פלפלים צלויים.",
+      "photo": "recipe-645-roasted-hot-peppers-garlic",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "New Born",
+      "creditKind": "שולחת ההודעה",
+      "creditLabel": "שולחת: New Born",
+      "sourceSharer": "New Born",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "New Born — שיתפה את קובץ המתכונים",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "פלפל חריף בתנור עם הרבה שום"
+    },
+    {
+      "id": 646,
+      "cat": "סלטים וממרחים",
+      "title": "פטריות בתנור",
+      "mid": "recipe-646",
+      "year": 2026,
+      "ingredients": [
+        "2 קופסאות שימורי פטריות",
+        "1½ כפות שמן",
+        "קורט מלח",
+        "¼ כפית פלפל שחור"
+      ],
+      "steps": [
+        "מחממים תנור ל־220 מעלות. מסננים ומייבשים את הפטריות, מערבבים עם תיבול ומשטחים בשכבה אחת. צולים 20–25 דקות ומערבבים באמצע."
+      ],
+      "note": "גודל קופסאות הפטריות אינו מפורט במקור.",
+      "photo": "recipe-646-roasted-canned-mushrooms",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "New Born",
+      "creditKind": "שולחת ההודעה",
+      "creditLabel": "שולחת: New Born",
+      "sourceSharer": "New Born",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "New Born — שיתפה את קובץ המתכונים",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "פטריות בתנור"
+    },
+    {
+      "id": 647,
+      "cat": "עוגות ועוגיות",
+      "title": "עוגיות שוקולד צ׳יפס רכות",
+      "mid": "recipe-647",
+      "year": 2026,
+      "ingredients": [
+        "4 כוסות קמח פחות 2 כפות",
+        "1 אבקת אפייה",
+        "1½ כפיות סודה לשתייה",
+        "1 כפית מלח",
+        "200 גרם שוקולד",
+        "1 כוס סוכר לבן",
+        "1 כוס סוכר חום",
+        "1 כוס שמן",
+        "½ כוס מים",
+        "2 כפות וניל",
+        "2 ביצים"
+      ],
+      "steps": [
+        "מערבבים לבצק, יוצרים עיגולים ומניחים במרווחים. אופים 8½–12 דקות לפי התנור; הטמפרטורה לא צוינה."
+      ],
+      "note": "טמפרטורת האפייה לא הופיעה במקור. כמות אבקת האפייה נמסרה בנוסח ״1 אבקת אפייה״ ונשמרה כפי שנכתבה.",
+      "photo": "recipe-647-chocolate-chip-cookies",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "תילי פרוג",
+      "creditKind": "מקור לפי כותרת",
+      "creditLabel": "מקור: תילי פרוג",
+      "sourceSharer": "דבורי מינצברג",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "תילי פרוג — מקור לפי כותרת; דבורי מינצברג שיתפה גרסה עם שינויים",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "עוגיות שוקולד צ׳יפס רכות",
+      "subcat": "עוגיות"
+    },
+    {
+      "id": 648,
+      "cat": "קינוחים ומנות אחרונות",
+      "title": "מוס קפה ואלכוהול",
+      "mid": "recipe-648",
+      "year": 2026,
+      "ingredients": [
+        "2 מיכלי ריצ׳",
+        "3 חלמונים",
+        "3 כפיות נס קפה מומסות במעט מים רותחים",
+        "½ בקבוק תמצית וניל",
+        "½ כוס אלכוהול",
+        "2 כוסות סוכר"
+      ],
+      "steps": [
+        "מקציפים את הריצ׳ ומוסיפים תוך כדי את החלמונים, הקפה והווניל. מקציפים 5 דקות ומוסיפים אלכוהול. שלב הקירור או ההקפאה לא צוין."
+      ],
+      "note": "אזהרת בטיחות: המתכון כולל חלמונים חיים ללא טיפול חום. מומלץ להשתמש בביצים מפוסטרות. סוג האלכוהול, גודל מיכלי הריצ׳ ובקבוק הווניל ושלב הקירור או ההקפאה אינם מפורטים במקור. שתי כוסות הסוכר נוספו בהודעת המשך. הקרדיט המקורי בשרשור אינו חד־משמעי.",
+      "photo": "recipe-648-coffee-alcohol-mousse",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "YELLOW",
+      "creditKind": "משתפת המתכון",
+      "creditLabel": "שולחת: YELLOW",
+      "sourceSharer": "YELLOW",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "YELLOW — שיתפה; קרדיט לשני / רידי פרוג צוין בשרשור אך השיוך בין שתי הגרסאות אינו חד־משמעי",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "מוס קפה ואלכוהול"
+    },
+    {
+      "id": 649,
+      "cat": "קינוחים ומנות אחרונות",
+      "title": "מוס קפה וליקר שוקולד",
+      "mid": "recipe-649",
+      "year": 2026,
+      "ingredients": [
+        "2 מיכלי ריצ׳",
+        "1 ביצה",
+        "4 כפיות נס קפה מומסות במעט מים רותחים",
+        "½ בקבוק תמצית וניל",
+        "¾ כוס ליקר שוקולד",
+        "2 כוסות סוכר"
+      ],
+      "steps": [
+        "מקציפים את הריצ׳ ומוסיפים תוך כדי את הביצה, הקפה והווניל. מקציפים 5 דקות ומוסיפים ליקר שוקולד. שלב הקירור או ההקפאה לא צוין."
+      ],
+      "note": "אזהרת בטיחות: המתכון כולל ביצה חיה ללא טיפול חום. מומלץ להשתמש בביצה מפוסטרת. גדלי מיכלי הריצ׳ ובקבוק הווניל ושלב הקירור או ההקפאה אינם מפורטים במקור. שתי כוסות הסוכר נוספו בהודעת המשך. הקרדיט המקורי בשרשור אינו חד־משמעי.",
+      "photo": "recipe-649-coffee-chocolate-liqueur-mousse",
+      "scan": null,
+      "continuation": false,
+      "new": true,
+      "author": "YELLOW",
+      "creditKind": "משתפת המתכון",
+      "creditLabel": "שולחת: YELLOW",
+      "sourceSharer": "YELLOW",
+      "sourceSharerKind": "משתפת",
+      "creditEvidence": "YELLOW — שיתפה; קרדיט לשני / רידי פרוג צוין בשרשור אך השיוך בין שתי הגרסאות אינו חד־משמעי",
+      "generatedImage": true,
+      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
+      "imageAlt": "מוס קפה וליקר שוקולד"
+    }
+  ],
+  "photos": {
+    "recipe-642-roasted-fennel": {
+      "path": "media/photos/recipe-642-roasted-fennel--ebaa2d1ba28bb384.webp",
+      "sha256": "ebaa2d1ba28bb384f53797c25279a1706cd249bf07a86858d5a15f567a019316",
+      "bytes": 189022
+    },
+    "recipe-643-carrot-hot-pepper-salad": {
+      "path": "media/photos/recipe-643-carrot-hot-pepper-salad--f80c03aa92042c83.webp",
+      "sha256": "f80c03aa92042c833446e45406684571fce9a2889c1d2c0010bac4e562334a5f",
+      "bytes": 129246
+    },
+    "recipe-644-nahmi-pickles": {
+      "path": "media/photos/recipe-644-nahmi-pickles--a814602f9d629570.webp",
+      "sha256": "a814602f9d629570c5d36c69eb3bfc9783266121fee854ee0f12d6ebce864354",
+      "bytes": 141556
+    },
+    "recipe-645-roasted-hot-peppers-garlic": {
+      "path": "media/photos/recipe-645-roasted-hot-peppers-garlic--558e65c668debc75.webp",
+      "sha256": "558e65c668debc75138ec55d46ba752e1c207ade1e944da679a8df2be7f29588",
+      "bytes": 131682
+    },
+    "recipe-646-roasted-canned-mushrooms": {
+      "path": "media/photos/recipe-646-roasted-canned-mushrooms--3d775e8c6e7ec563.webp",
+      "sha256": "3d775e8c6e7ec563636dc84e09fa13b46fdfc21133d91658a4ec561e218c3763",
+      "bytes": 194314
+    },
+    "recipe-647-chocolate-chip-cookies": {
+      "path": "media/photos/recipe-647-chocolate-chip-cookies--5d6a4e9955a5913d.webp",
+      "sha256": "5d6a4e9955a5913dfd133502aefee896de8d8d5590401575bb6a8721bad1023a",
+      "bytes": 158650
+    },
+    "recipe-648-coffee-alcohol-mousse": {
+      "path": "media/photos/recipe-648-coffee-alcohol-mousse--646e5672b2dfae77.webp",
+      "sha256": "646e5672b2dfae77e0aed86f29b6b72f67aa05dd0b48cd4f65faf2b392396a33",
+      "bytes": 57740
+    },
+    "recipe-649-coffee-chocolate-liqueur-mousse": {
+      "path": "media/photos/recipe-649-coffee-chocolate-liqueur-mousse--b8b652461e77adad.webp",
+      "sha256": "b8b652461e77adadc63e97fca764473e8b97f7f480793ee73ec906a432914400",
+      "bytes": 91338
+    }
+  }
+}
