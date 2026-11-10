@@ -32,7 +32,10 @@ function setup(){
  $('sidebar-nav').innerHTML=categories.map((c,i)=>`<button type="button" class="navitem ${i===0?'active':''}" data-cat="${html(c)}"><span class="navicon">${ICONS[i]}</span><span>${html(i===0?'כל המתכונים':c)}</span><span class="navcount">${catCount(c)}</span></button>`).join('');
  $('category-cards').innerHTML=categories.slice(1).map(c=>`<button type="button" class="catbox" data-cat="${html(c)}"><img class="catphoto" src="${photos[CATPIC[c]]}" alt="תמונת המחשה לקטגוריית ${html(c)}"/><div class="cattext"><strong>${html(c)}</strong><small>${catCount(c)} מתכונים</small></div></button>`).join('');
  document.querySelectorAll('[data-cat]').forEach(el=>el.addEventListener('click',()=>{chosen=el.dataset.cat;fishKind='הכל';cakeSubcat='הכל';favoritesOnly=false;limit=PAGE_SIZE;render();$('search-scroll-anchor').scrollIntoView({behavior:'smooth',block:'start'})}));
- $('search').addEventListener('input',e=>{query=e.target.value;limit=PAGE_SIZE;render()});
+ const updateSearch=(e)=>{query=e.target.value;const other=e.target.id==='search'?'top-search-input':'search';$(other).value=query;limit=PAGE_SIZE;render()};
+ $('search').addEventListener('input',updateSearch);
+ $('top-search-input').addEventListener('input',updateSearch);
+ $('top-search').addEventListener('submit',e=>{e.preventDefault();$('search-scroll-anchor').scrollIntoView({behavior:'smooth',block:'start'})});
  $('sort').addEventListener('change',e=>{sort=e.target.value;render()});
  $('year').addEventListener('change',e=>{year=e.target.value;limit=PAGE_SIZE;render()});
  $('fav-top').addEventListener('click',()=>{favoritesOnly=!favoritesOnly;limit=PAGE_SIZE;render();$('recipes').scrollIntoView({behavior:'smooth',block:'start'})});
@@ -45,6 +48,11 @@ function setup(){
  const updateFloatingActions=()=>{
    $('back-to-top').classList.toggle('hidden',window.scrollY<650);
    $('surprise-floating').classList.toggle('hidden',$('surprise').getBoundingClientRect().bottom>8);
+   // Only show the top search while the primary (sticky) search bar is offscreen.
+   const bounds=$('search-toolbar').getBoundingClientRect();
+   const primaryVisible=bounds.bottom>0 && bounds.top<window.innerHeight;
+   $('top-search').classList.toggle('toolbar-visible',primaryVisible);
+   $('top-search').setAttribute('aria-hidden',String(primaryVisible));
  };
  $('back-to-top').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
  window.addEventListener('scroll',updateFloatingActions,{passive:true});
@@ -102,7 +110,7 @@ function setupLatestRecipes(){
    if(button)openRecipe(Number(button.dataset.latestOpen));
  });
 }
-function clearFilters(){chosen='הכל';fishKind='הכל';cakeSubcat='הכל';favoritesOnly=false;query='';sort='popular';year='all';limit=PAGE_SIZE;$('search').value='';$('sort').value='popular';$('year').value='all';render()}
+function clearFilters(){chosen='הכל';fishKind='הכל';cakeSubcat='הכל';favoritesOnly=false;query='';sort='popular';year='all';limit=PAGE_SIZE;$('search').value='';$('top-search-input').value='';$('sort').value='popular';$('year').value='all';render()}
 function matches(r){if(chosen!=='הכל'&&r.cat!==chosen)return false;if(chosen===CAKE_PARENT&&cakeSubcat!=='הכל'&&r.subcat!==cakeSubcat)return false;if(chosen==='דגים'&&fishKind!=='הכל'&&!norm(r.title).includes(norm(fishKind)))return false;if(favoritesOnly&&!favorites.has(r.id))return false;if(year!=='all'&&String(r.year)!==year)return false;
  if(!norm(query))return true;const words=norm(query).split(/\s+/).filter(Boolean);
  const hay=norm([r.title,...(r.aliases||[]),r.cat,r.year,...r.ingredients,...r.steps,r.note,r.author,r.creditLabel,r.sourceSharer].join(' '));return words.every(x=>hay.includes(x));}
