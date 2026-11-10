@@ -35,6 +35,8 @@ jobs:
           path: media-source
       - name: Assemble and validate all data and media
         run: python scripts/build.py --media-root media-source --output "$RUNNER_TEMP/recipe-site"
+      - name: Apply approved new recipes (compiled output only)
+        run: python scripts/apply_approved_additions.py --site "$RUNNER_TEMP/recipe-site"
       - name: Reject invalid data and media
         run: python tests/validation.py --site "$RUNNER_TEMP/recipe-site"
       - name: Install browser
