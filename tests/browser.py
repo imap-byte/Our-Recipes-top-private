@@ -51,6 +51,26 @@ def main():
         assert page.locator('#sidebar-nav .navcount').first.inner_text()==str(len(data['recipes']))
         print('PASS project subpath, initial count and categories')
 
+        # The opening screen offers a quick search only while the sticky toolbar is not visible.
+        page.set_viewport_size({'width':1440,'height':590})
+        page.evaluate('window.scrollTo(0,0)')
+        page.wait_for_function("getComputedStyle(document.querySelector('#top-search')).visibility === 'visible'")
+        page.locator('#top-search-input').fill('פסטה')
+        assert page.locator('#search').input_value()=='פסטה'
+        page.locator('.top-search-submit').click()
+        page.wait_for_function("getComputedStyle(document.querySelector('#top-search')).visibility === 'hidden'")
+        assert page.locator('#search').input_value()=='פסטה'
+        assert page.locator('#top-search').get_attribute('aria-hidden')=='true'
+        page.locator('#search').fill('קינואה')
+        assert page.locator('#top-search-input').input_value()=='קינואה'
+        page.locator('#clear').click()
+        assert page.locator('#top-search-input').input_value()==''
+        page.evaluate('window.scrollTo(0,0)')
+        page.wait_for_function("getComputedStyle(document.querySelector('#top-search')).visibility === 'visible'")
+        page.set_viewport_size({'width':1440,'height':1000})
+        print('PASS conditional top search, bidirectional syncing and navigation to results')
+
+
         latest=sorted(data['recipes'],key=lambda r:r['id'],reverse=True)[:10]
         assert page.locator('#new-on-tray-title').inner_text().startswith('חדש על המגש')
         assert page.locator('.tray-set').count()==2
