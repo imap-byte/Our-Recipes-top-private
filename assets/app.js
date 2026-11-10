@@ -50,6 +50,7 @@ function setup(){
  window.addEventListener('scroll',updateFloatingActions,{passive:true});
  window.addEventListener('resize',updateFloatingActions,{passive:true});
  updateFloatingActions();
+ setupLatestRecipes();
  document.addEventListener('keydown',e=>{
    if(!active)return;
    if(e.key==='Escape'){closeRecipe();return}
@@ -60,6 +61,46 @@ function setup(){
  window.addEventListener('hashchange',()=>{const m=location.hash.match(/^#recipe-(\d+)$/);if(m){let id=+m[1];if(ids.has(resolveId(id)))openRecipe(resolveId(id),false)}else if(active)closeRecipe(false)});
  const initial=location.hash.match(/^#recipe-(\d+)$/);if(initial&&ids.has(resolveId(+initial[1])))openRecipe(resolveId(+initial[1]),false);
  render();
+}
+// Build the strip from the live recipe list, including approved build-time additions.
+// New IDs are assigned as recipes are published; no maintenance list is required.
+function setupLatestRecipes(){
+ const latest=[...recipes].sort((a,b)=>b.id-a.id).slice(0,10);
+ const track=$('latest-recipes-track');
+ if(!track||!latest.length)return;
+ function makeSet(duplicate){
+   const set=document.createElement('div');
+   set.className='tray-set';
+   if(duplicate)set.setAttribute('aria-hidden','true');
+   latest.forEach(r=>{
+     const button=document.createElement('button');
+     button.type='button';
+     button.className='tray-item';
+     button.dataset.latestOpen=r.id;
+     if(duplicate)button.tabIndex=-1;
+     else button.setAttribute('aria-label','פתיחת המתכון: '+r.title);
+     const img=document.createElement('img');
+     img.src=photos[r.photo];
+     img.alt=duplicate?'':'תמונת המחשה: '+r.title;
+     img.loading='lazy';
+     const details=document.createElement('span');
+     details.className='tray-details';
+     const title=document.createElement('strong');
+     title.textContent=r.title;
+     const category=document.createElement('small');
+     category.textContent=r.subcat||r.cat;
+     details.append(title,category);
+     button.append(img,details);
+     set.append(button);
+   });
+   return set;
+ }
+ // Repeated set creates a seamless loop; hidden copy is excluded from keyboard navigation.
+ track.replaceChildren(makeSet(false),makeSet(true));
+ track.addEventListener('click',event=>{
+   const button=event.target.closest('[data-latest-open]');
+   if(button)openRecipe(Number(button.dataset.latestOpen));
+ });
 }
 function clearFilters(){chosen='הכל';fishKind='הכל';cakeSubcat='הכל';favoritesOnly=false;query='';sort='popular';year='all';limit=PAGE_SIZE;$('search').value='';$('sort').value='popular';$('year').value='all';render()}
 function matches(r){if(chosen!=='הכל'&&r.cat!==chosen)return false;if(chosen===CAKE_PARENT&&cakeSubcat!=='הכל'&&r.subcat!==cakeSubcat)return false;if(chosen==='דגים'&&fishKind!=='הכל'&&!norm(r.title).includes(norm(fishKind)))return false;if(favoritesOnly&&!favorites.has(r.id))return false;if(year!=='all'&&String(r.year)!==year)return false;

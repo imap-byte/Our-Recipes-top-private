@@ -50,6 +50,20 @@ def main():
         assert page.locator('#category-cards button').count()==len(data['categories'])-1
         assert page.locator('#sidebar-nav .navcount').first.inner_text()==str(len(data['recipes']))
         print('PASS project subpath, initial count and categories')
+
+        latest=sorted(data['recipes'],key=lambda r:r['id'],reverse=True)[:10]
+        assert page.locator('#new-on-tray-title').inner_text().startswith('חדש על המגש')
+        assert page.locator('.tray-set').count()==2
+        assert page.locator('.tray-set').first.locator('.tray-item').count()==len(latest)
+        assert page.locator('.tray-set').first.locator('.tray-item').evaluate_all(
+            "els=>els.map(e=>Number(e.dataset.latestOpen))")==[r['id'] for r in latest]
+        assert page.locator('.tray-set').nth(1).get_attribute('aria-hidden')=='true'
+        assert page.locator('.tray-set').nth(1).locator('button').first.get_attribute('tabindex')=='-1'
+        page.locator('.tray-set').first.locator('button').first.click()
+        assert page.locator('.dialog h2').inner_text()==latest[0]['title']
+        page.locator('#close-dialog').click()
+        print('PASS latest ten recipe carousel, accessible duplicate and recipe opening')
+
         # Cake filters appear below search only after choosing cakes and cookies.
         assert page.locator('#cake-hub').count()==0
         assert page.locator('#sidebar-nav [data-cake-subcat]').count()==0
