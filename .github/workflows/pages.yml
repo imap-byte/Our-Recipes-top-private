@@ -40,7 +40,7 @@ jobs:
       - name: Reject invalid data and media
         run: python tests/validation.py --site "$RUNNER_TEMP/recipe-site"
       - name: Install browser
-        run: python -m playwright install --with-deps chromium
+        run: python -m playwright install chromium
       - name: Browser regression tests
         run: python tests/browser.py --site "$RUNNER_TEMP/recipe-site"
       - name: Create self-contained offline HTML
