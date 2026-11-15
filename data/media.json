@@ -3700,6 +3700,11 @@
       "path": "media/photos/recipe-654-moroccan-fish--e19ded66b8fae66e.avif",
       "sha256": "e19ded66b8fae66e2600139fb73aff5cc373fcdbf2fe850592c892cb3d3a6038",
       "bytes": 1974
+    },
+    "recipe-655-henni-churros": {
+      "path": "media/photos/recipe-655-henni-churros--05e3f9e19957c10c.avif",
+      "sha256": "05e3f9e19957c10c83a9067e7b08f381c2ade5946989768a6a079e011f1aadd8",
+      "bytes": 5612
     }
   },
   "scans": {}
