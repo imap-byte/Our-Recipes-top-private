@@ -3690,6 +3690,16 @@
       "path": "media/photos/recipe-641-smoked-tuna-sweet-mustard--d87c2cb74b74ef22.webp",
       "sha256": "d87c2cb74b74ef22f9d55ac7f99a06b00f52838f42ddcb7d2f365940ceba4f61",
       "bytes": 166296
+    },
+    "recipe-653-creamy-mushrooms": {
+      "path": "media/photos/recipe-653-creamy-mushrooms--d17865fc8956b20f.avif",
+      "sha256": "d17865fc8956b20f0548b615d8d3f92d1710141c950f991c2bf648b15d430439",
+      "bytes": 2679
+    },
+    "recipe-654-moroccan-fish": {
+      "path": "media/photos/recipe-654-moroccan-fish--e19ded66b8fae66e.avif",
+      "sha256": "e19ded66b8fae66e2600139fb73aff5cc373fcdbf2fe850592c892cb3d3a6038",
+      "bytes": 1974
     }
   },
   "scans": {}
