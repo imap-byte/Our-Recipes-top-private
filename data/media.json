@@ -3705,6 +3705,11 @@
       "path": "media/photos/recipe-650-churros-cinnamon--cc649de870acf1c6.webp",
       "sha256": "cc649de870acf1c6c49ecbb478d9e983ffd2b964aafb9c97da0086564ad4707d",
       "bytes": 330758
+    },
+    "recipe-656-churros-powdered-sugar": {
+      "path": "media/photos/recipe-651-churros-powdered-sugar--de56075633889287.webp",
+      "sha256": "de56075633889287d437d06e4dbbe1c75d8b7eccd1a7e0c88500b3b7abef6a05",
+      "bytes": 266990
     }
   },
   "scans": {}
