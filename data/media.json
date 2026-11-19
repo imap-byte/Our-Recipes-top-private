@@ -3710,6 +3710,31 @@
       "path": "media/photos/recipe-651-churros-powdered-sugar--de56075633889287.webp",
       "sha256": "de56075633889287d437d06e4dbbe1c75d8b7eccd1a7e0c88500b3b7abef6a05",
       "bytes": 266990
+    },
+    "recipe-657-caprese": {
+      "path": "media/photos/recipe-657-caprese--d773f27aae37c30e.webp",
+      "sha256": "d773f27aae37c30e8615195284670f190e20fb906bd2e9246f868eefdd9721f8",
+      "bytes": 118758
+    },
+    "recipe-658-bruschetta": {
+      "path": "media/photos/recipe-658-bruschetta--3102fda6b8ba0948.webp",
+      "sha256": "3102fda6b8ba09480b6d7e91f1197fa447a8682ab45c6aa4c4b74bb55758368f",
+      "bytes": 187942
+    },
+    "recipe-659-carpaccio": {
+      "path": "media/photos/recipe-659-carpaccio--540482b79c92bf3a.webp",
+      "sha256": "540482b79c92bf3a4c5dda2e97b19f19654e67ef81bb7f37407e2c3cc7959be8",
+      "bytes": 219944
+    },
+    "recipe-660-mushrooms": {
+      "path": "media/photos/recipe-660-mushrooms--88716366c0b9bf44.webp",
+      "sha256": "88716366c0b9bf441c00e40006f48bffe28d62a2df184d01e923e89b5c2fb853",
+      "bytes": 210164
+    },
+    "recipe-661-tartlets": {
+      "path": "media/photos/recipe-661-tartlets--87d281fc8fd4074d.webp",
+      "sha256": "87d281fc8fd4074d01a12797b75b271dfc86a06e2ce66786c4a88133a81c793e",
+      "bytes": 100080
     }
   },
   "scans": {}
