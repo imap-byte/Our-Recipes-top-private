@@ -3735,6 +3735,11 @@
       "path": "media/photos/recipe-661-tartlets--87d281fc8fd4074d.webp",
       "sha256": "87d281fc8fd4074d01a12797b75b271dfc86a06e2ce66786c4a88133a81c793e",
       "bytes": 100080
+    },
+    "recipe-662-cigar-mushroom": {
+      "path": "media/photos/recipe-662-cigar-mushroom--d412dae12b4b6b70.webp",
+      "sha256": "d412dae12b4b6b7098bd3711e7d55ea8d321dc069e628bc51c3e07ba29be6b7d",
+      "bytes": 201246
     }
   },
   "scans": {}
