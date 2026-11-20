@@ -1,0 +1,5 @@
+GitHub capability diagnostic
+
+Timestamp: 2026-11-01T10:24:37+02:00 (Asia/Jerusalem)
+Purpose: Non-destructive verification that the authorized agent can create a dedicated branch, add a small diagnostic file, commit it, and open a pull request without modifying main.
+Scope: This file only; no merge or auto-merge requested.
