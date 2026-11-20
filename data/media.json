@@ -3740,6 +3740,16 @@
       "path": "media/photos/recipe-662-cigar-mushroom--d412dae12b4b6b70.webp",
       "sha256": "d412dae12b4b6b7098bd3711e7d55ea8d321dc069e628bc51c3e07ba29be6b7d",
       "bytes": 201246
+    },
+    "recipe-663-coffee-marble": {
+      "path": "media/photos/recipe-663-coffee-marble--a476db40cfc0cde1.webp",
+      "sha256": "a476db40cfc0cde1e9c7f67e589cbaf89cd99994a4278b029d6e5aa246fb0d45",
+      "bytes": 147612
+    },
+    "recipe-664-chocolate-halva": {
+      "path": "media/photos/recipe-664-chocolate-halva--c56a4050f6a0e4e4.webp",
+      "sha256": "c56a4050f6a0e4e473fef9219acf102d3c9668715b807ae9cf9ef290e9d8e8b5",
+      "bytes": 117660
     }
   },
   "scans": {}
