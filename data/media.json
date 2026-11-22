@@ -3805,6 +3805,16 @@
       "path": "media/photos/recipe-675-potato-wedges--d09894bc809b4d32.webp",
       "sha256": "d09894bc809b4d3292ffebb0e641a81e0deb30906bbb78ca7573d3252e284009",
       "bytes": 144988
+    },
+    "taco-676-20261123": {
+      "path": "media/photos/taco-676-20261123--a8007c847d437a6c.webp",
+      "sha256": "a8007c847d437a6ce12733d95021ab3de6357850ff726776dbf00eecb88ff481",
+      "bytes": 185532
+    },
+    "taco-677-20261123": {
+      "path": "media/photos/taco-677-20261123--3b7389e89486d417.webp",
+      "sha256": "3b7389e89486d41729f097135e3ecf9e36180705e52623796961bd76f9f061a5",
+      "bytes": 161330
     }
   },
   "scans": {}
