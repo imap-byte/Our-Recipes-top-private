@@ -161,44 +161,6 @@
       "imageAlt": "פטריות בתנור"
     },
     {
-      "id": 647,
-      "cat": "עוגות ועוגיות",
-      "title": "עוגיות שוקולד צ׳יפס רכות",
-      "mid": "recipe-647",
-      "year": 2026,
-      "ingredients": [
-        "4 כוסות קמח פחות 2 כפות",
-        "1 אבקת אפייה",
-        "1½ כפיות סודה לשתייה",
-        "1 כפית מלח",
-        "200 גרם שוקולד",
-        "1 כוס סוכר לבן",
-        "1 כוס סוכר חום",
-        "1 כוס שמן",
-        "½ כוס מים",
-        "2 כפות וניל",
-        "2 ביצים"
-      ],
-      "steps": [
-        "מערבבים לבצק, יוצרים עיגולים ומניחים במרווחים. אופים 8½–12 דקות לפי התנור; הטמפרטורה לא צוינה."
-      ],
-      "note": "טמפרטורת האפייה לא הופיעה במקור. כמות אבקת האפייה נמסרה בנוסח ״1 אבקת אפייה״ ונשמרה כפי שנכתבה.",
-      "photo": "recipe-647-chocolate-chip-cookies",
-      "scan": null,
-      "continuation": false,
-      "new": true,
-      "author": "תילי פרוג",
-      "creditKind": "מקור לפי כותרת",
-      "creditLabel": "מקור: תילי פרוג",
-      "sourceSharer": "דבורי מינצברג",
-      "sourceSharerKind": "משתפת",
-      "creditEvidence": "תילי פרוג — מקור לפי כותרת; דבורי מינצברג שיתפה גרסה עם שינויים",
-      "generatedImage": true,
-      "generatedImageNote": "תמונת המחשה ייעודית שנוצרה למתכון הזה בלבד; אינה צילום של המנה המקורית.",
-      "imageAlt": "עוגיות שוקולד צ׳יפס רכות",
-      "subcat": "עוגיות"
-    },
-    {
       "id": 648,
       "cat": "קינוחים ומנות אחרונות",
       "title": "מוס קפה ואלכוהול",
@@ -288,11 +250,6 @@
       "path": "media/photos/recipe-646-roasted-canned-mushrooms--3d775e8c6e7ec563.webp",
       "sha256": "3d775e8c6e7ec563636dc84e09fa13b46fdfc21133d91658a4ec561e218c3763",
       "bytes": 194314
-    },
-    "recipe-647-chocolate-chip-cookies": {
-      "path": "media/photos/recipe-647-chocolate-chip-cookies--5d6a4e9955a5913d.webp",
-      "sha256": "5d6a4e9955a5913dfd133502aefee896de8d8d5590401575bb6a8721bad1023a",
-      "bytes": 158650
     },
     "recipe-648-coffee-alcohol-mousse": {
       "path": "media/photos/recipe-648-coffee-alcohol-mousse--646e5672b2dfae77.webp",
