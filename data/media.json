@@ -3800,6 +3800,11 @@
       "path": "media/photos/recipe-674-20261122--63a832835a1c7da5.webp",
       "sha256": "63a832835a1c7da545d5be8880f590a117c47e4f1f8e7476ea44d05285632bd2",
       "bytes": 37532
+    },
+    "recipe-675-potato-wedges": {
+      "path": "media/photos/recipe-675-potato-wedges--d09894bc809b4d32.webp",
+      "sha256": "d09894bc809b4d3292ffebb0e641a81e0deb30906bbb78ca7573d3252e284009",
+      "bytes": 144988
     }
   },
   "scans": {}
