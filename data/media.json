@@ -3755,6 +3755,51 @@
       "path": "media/photos/recipe-665-pancake-egg-salad--c7382de6d74b1fc4.webp",
       "sha256": "c7382de6d74b1fc410cc936da7c6c6e370b67e2bd772cc418320a06e538643e4",
       "bytes": 76150
+    },
+    "recipe-666-20261122": {
+      "path": "media/photos/recipe-666-20261122--2f45a1df24c87fff.webp",
+      "sha256": "2f45a1df24c87fff75a9d9d088223ecc04837de2b97cffb83b2b6cb679bc49e9",
+      "bytes": 41346
+    },
+    "recipe-667-20261122": {
+      "path": "media/photos/recipe-667-20261122--e2314a3f4c674d2b.webp",
+      "sha256": "e2314a3f4c674d2b11f62d533c908a11d429bbe9a5a7cd7d8772d54a66a3005f",
+      "bytes": 42430
+    },
+    "recipe-668-20261122": {
+      "path": "media/photos/recipe-668-20261122--0ffb1635b0bc15d3.webp",
+      "sha256": "0ffb1635b0bc15d31669e1dacb0514f1b0e87853bb31a83a0a3c43b9ad42d000",
+      "bytes": 31908
+    },
+    "recipe-669-20261122": {
+      "path": "media/photos/recipe-669-20261122--e6c7b3b893fe0a1c.webp",
+      "sha256": "e6c7b3b893fe0a1cb23220214eed47337e21d9e72c48af50823911d7184f43ca",
+      "bytes": 39936
+    },
+    "recipe-670-20261122": {
+      "path": "media/photos/recipe-670-20261122--d0e1a90e2df69bb7.webp",
+      "sha256": "d0e1a90e2df69bb724616a4b4c94c6fb738b5136d154aa0bf6dd5fdd80cb4af2",
+      "bytes": 38684
+    },
+    "recipe-671-20261122": {
+      "path": "media/photos/recipe-671-20261122--1c2323ba8b82453c.webp",
+      "sha256": "1c2323ba8b82453cc4cc7e17f3492722952f98e040f6e8dccf4c8d531790f356",
+      "bytes": 32198
+    },
+    "recipe-672-20261122": {
+      "path": "media/photos/recipe-672-20261122--231b6e57c65158b2.webp",
+      "sha256": "231b6e57c65158b2573d9358f949c687e0eceff49974c4a2083de2ab53720a72",
+      "bytes": 52208
+    },
+    "recipe-673-20261122": {
+      "path": "media/photos/recipe-673-20261122--118cf550982ddabc.webp",
+      "sha256": "118cf550982ddabc77884f1576bba8ad364991a8399d3fe0dfe46345659f36a2",
+      "bytes": 53364
+    },
+    "recipe-674-20261122": {
+      "path": "media/photos/recipe-674-20261122--63a832835a1c7da5.webp",
+      "sha256": "63a832835a1c7da545d5be8880f590a117c47e4f1f8e7476ea44d05285632bd2",
+      "bytes": 37532
     }
   },
   "scans": {}
