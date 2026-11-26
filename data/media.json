@@ -3850,6 +3850,11 @@
       "path": "media/photos/minestrone-684-20261126--01b80d74e1faae90.avif",
       "sha256": "01b80d74e1faae90c594096b8bf42fe38376a1b1b48feb32d95e98d2e6d5ef80",
       "bytes": 135466
+    },
+    "cholent-pulled-beef-685-20261126": {
+      "path": "media/photos/cholent-pulled-beef-685-20261126--1bdd42112d4ed813.avif",
+      "sha256": "1bdd42112d4ed8131c94ff5fb3fa4b4df5932e31a4ba8b3adaad13744803b8da",
+      "bytes": 152312
     }
   },
   "scans": {}
