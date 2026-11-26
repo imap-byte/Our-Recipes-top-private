@@ -3815,6 +3815,41 @@
       "path": "media/photos/taco-677-20261123--3b7389e89486d417.webp",
       "sha256": "3b7389e89486d41729f097135e3ecf9e36180705e52623796961bd76f9f061a5",
       "bytes": 161330
+    },
+    "tart-678-20261126": {
+      "path": "media/photos/tart-678-20261126--caf0726513ca96fa.avif",
+      "sha256": "caf0726513ca96fa073a641f79c7c7907374f61c6426166f27d6bff4de2fe30a",
+      "bytes": 108509
+    },
+    "beans-679-20261126": {
+      "path": "media/photos/beans-679-20261126--7a95d142bff97190.avif",
+      "sha256": "7a95d142bff971900347ff27c4612cb2d4879f858ebbce10641d3f2b2fd2977a",
+      "bytes": 175842
+    },
+    "tehila-680-20261126": {
+      "path": "media/photos/tehila-680-20261126--bdb0d6bf3bbf8e34.avif",
+      "sha256": "bdb0d6bf3bbf8e34143043f39afdedaf0610e3260ee7d4bc57262a4f5ed28b02",
+      "bytes": 103976
+    },
+    "dumplings-681-20261126": {
+      "path": "media/photos/dumplings-681-20261126--9d9b0c0c16e4da7b.avif",
+      "sha256": "9d9b0c0c16e4da7b895f99b8c359f399e4f30a183e660e42951efb3042ba3876",
+      "bytes": 127543
+    },
+    "garlic-682-20261126": {
+      "path": "media/photos/garlic-682-20261126--1baf065643a1b5fd.avif",
+      "sha256": "1baf065643a1b5fdbaa4b2738eda3bb9393e4b09d8ab90ca105b66a72bc1d1d2",
+      "bytes": 85522
+    },
+    "peas-683-20261126": {
+      "path": "media/photos/peas-683-20261126--72b9bee023d44231.avif",
+      "sha256": "72b9bee023d44231f109c84fa9768a46f2cb400c8f0668acb1941f3593fd40f2",
+      "bytes": 121879
+    },
+    "minestrone-684-20261126": {
+      "path": "media/photos/minestrone-684-20261126--01b80d74e1faae90.avif",
+      "sha256": "01b80d74e1faae90c594096b8bf42fe38376a1b1b48feb32d95e98d2e6d5ef80",
+      "bytes": 135466
     }
   },
   "scans": {}
