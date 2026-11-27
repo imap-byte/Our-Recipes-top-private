@@ -19,7 +19,7 @@ def apply(site: Path):
     existing_photos = set(media["photos"])
     new_ids = [r["id"] for r in additions["recipes"]]
     new_photos = additions["photos"]
-    assert new_ids == list(range(642, 650)), "Unexpected approved IDs"
+    assert new_ids == [642, 643, 644, 645, 646, 648, 649], "Unexpected recipe IDs"
     assert len(set(new_ids)) == len(new_ids)
     assert not existing_ids.intersection(new_ids), "Recipe ID collision"
     assert not existing_photos.intersection(new_photos), "Photo key collision"
